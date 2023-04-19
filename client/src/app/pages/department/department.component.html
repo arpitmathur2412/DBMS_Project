@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Department Id</th>
+            <th>Department Name</th>
+            <!-- <th>Actions</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of dept">
+            <td>{{data.dept_id}}</td>
+            <td>{{data.dept_name}}</td>
+            <!-- <td>s
+              <div class="row ">
+                <div class="col-12 text-end">
+                  <button class="btn btn-md btn-warning"> <i class="bi bi-pencil"></i></button>
+                  <span class="m-1"></span>
+                </div>
+              </div>
+            </td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

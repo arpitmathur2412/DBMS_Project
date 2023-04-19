@@ -1,0 +1,37 @@
+<div class="container">
+
+  <div class="row mt-5">
+    <div class="col-12">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Unallocated Id</th>
+            <th>Wing Id</th>
+            <th>Room Number</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of unalloc">
+            <td>{{data.unallocated_id}}</td>
+            <td>{{data.wing_id}}</td>
+            <td>{{data.room_no}}</td>
+            <td>
+              <div class="row ">
+                <div class="col-12 text-end">
+                  <span class="m-1"></span>
+                  <button class="btn btn-md btn-danger" (click)="onDeleteClick(data.unallocated_id)"><i
+                      class="bi bi-trash3-fill"></i></button>
+                  <!-- <span class="m-1"></span>
+                  <button class="btn btn-md btn-warning"> <i class="bi bi-pencil"></i></button>
+                  <span class="m-1"></span> -->
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
